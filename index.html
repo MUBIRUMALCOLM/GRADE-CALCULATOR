@@ -1,0 +1,60 @@
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="malcolm">
+    <h1>GRADE CALCULATOR</h1>
+    <label for="Enteryourmarks">Grade</label>
+    <input type="number" id="Enteryourname">
+    <button onclick="calculateGrade()">submit</button>
+    <p id="P"></p>
+    </div>>
+</body>
+    <script>
+        // grading scale; A=90-100, B=80-89, C=70-79, D=60-69,F=0-59
+
+        function calculateGrade() {
+            console.log("you clicked me")
+
+            var marksInput = document.getElementById("Enteryourname").value
+            console.log(marksInput)
+            var marks = parseInt(marksInput);
+
+            if (marks && marks >= 0 && marks <= 100){
+                var grade;
+                if (marks >= 90){
+                    grade = "A";
+                    document.getElementById("P").innerHTML="A"
+
+                } else if (marks >= 80){
+                    grade = "B";
+                    document.getElementById("P").innerHTML="B"
+
+                } else if (marks >= 70){
+                    grade = "C";
+                    document.getElementById("P").innerHTML="C"
+
+                } else if (marks >= 60){
+                    grade = "D";
+                    document.getElementById("P").innerHTML="D"
+
+                } else{
+                    grade = "F";
+                    document.getElementById("P").innerHTML="F"
+                }
+
+                console.log("grade: " + grade)
+                
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: purple;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: violet;
+    text-align: center;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .malcolm {
+    width: 250px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+  }
